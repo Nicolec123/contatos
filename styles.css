@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F4F4;
+    color: #333;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.container {
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    margin-left: 7%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+input:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.btn-mensagem {
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-mensagem:hover {
+    background-color: #0056B3;
+}
+
+#mensagem{
+  height: 10vh;
+  overflow: auto;
+  max-width: 400px;
+  min-width: 400px;
+  min-height: 8vh;
+  max-height: 18vh;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    input {
+        font-size: 14px;
+    }
+    .btn-mensagem {
+        font-size: 14px;
+    }
+
+}
+
+/* Responsividade */
+@media (max-width: 450px) {
+    .container {
+        padding: 15px;
+        max-width: 300px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    input {
+        font-size: 14px;
+    }
+    .btn-mensagem {
+        font-size: 14px;
+    }
+    #mensagem{
+        height: 8vh;
+        max-height: 10vh;
+        min-height: 5vh;
+        max-width: 300px;
+        min-width: 300px;
+    }
+}
